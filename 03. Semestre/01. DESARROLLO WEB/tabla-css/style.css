@@ -1,0 +1,296 @@
+/*Estilos principales */
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 1rem;
+}
+
+#imagen-scc{
+    position: relative; 
+    left: 40%; 
+}
+
+#parrafo-corte{
+    text-justify: auto;
+}
+
+header{
+    background-color: #95ff87c3;
+    color: #000000;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* Estilo para la sección con id="que-es-css" */
+#que-es-css {
+    border-radius: 8px;
+    background-color: #95ff87c3;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 0.3125rem; /* 5px */
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #95ff87c3;
+    color:#000000;
+}
+
+@media (max-width: 768px) {
+    #que-es-css {
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .destacado {
+        padding-left: 1rem;
+    }
+}
+
+.destacado {
+    font-weight: bold;
+    color: #080808;
+    text-align: left;
+    border-left: 5px solid #000000f6;
+    padding-left: 1.25rem;
+    margin-left: 0;
+    
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+.seccion {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+/* Grid de ventajas */
+.grid-ventajas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+    .ventaja {
+        background: #00490584;
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+
+    /* Ejemplos interactivos */
+.ejemplos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.ejemplo {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.boton-ejemplo {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container-flex {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.item-flex {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    flex: 1;
+    text-align: center;
+}
+
+.codigo {
+    font-family: 'Courier New', monospace;
+    background: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+
+/* Estilos específicos para la sección JS */
+#que-es-js {
+    border-radius: 8px;
+    background-color: #95ff87c3;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.contador button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Botón de cambio de color */
+#cambiar-color {
+    background-color: #ff9800; /* Naranja */
+    transition: background 0.3s;
+}
+
+#cambiar-color:hover {
+    background-color: #e65100;
+}
+/* Estilo base para todas las ventajas */
+.ventaja {
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #000000; /* Texto negro para mejor legibilidad */
+}
+
+/* Ventajas de CSS - Verde claro */
+#ventajas-css .ventaja {
+    background: #e9f5e9; /* Fondo verde claro */
+    border-left: 4px solid #4CAF50; /* Borde verde */
+}
+
+/* Ventajas de JavaScript - Amarillo claro */
+#ventajas-js .ventaja {
+    background: #fff8e1; /* Fondo amarillo claro */
+    border-left: 4px solid #FFC107; /* Borde amarillo */
+}
+
+/* Menú Hamburguesa */
+.menu-hamburguesa {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.hamburguesa-icono {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburguesa-icono .linea {
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* Menú Lateral (oculto por defecto) */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculta el menú */
+    width: 250px;
+    height: 100vh;
+    background: #95ff87c3;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s;
+    padding-top: 70px;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin: 15px 0;
+}
+
+.menu-lateral a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu-lateral a:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Clase para mostrar el menú */
+.menu-lateral.mostrar {
+    left: 0;
+}
+
+/* Animación del icono al activarse */
+.hamburguesa-icono.activo .linea:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburguesa-icono.activo .linea:nth-child(2) {
+    opacity: 0;
+}
+.hamburguesa-icono.activo .linea:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ejemplo para overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}

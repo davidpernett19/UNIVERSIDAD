@@ -1,0 +1,73 @@
+/* Estilos base para todos los div */
+div {
+    position: absolute;      /* Posicionamiento absoluto respecto al contenedor posicionado más cercano */
+    border: 2px solid #000000; /* Borde negro de 2px para todos los div */
+}
+
+/* Bloque 1 - Estilo principal */
+div.bloque1 {
+    background-color: #ebf0f9; /* Color de fondo azul claro/grisáceo */
+    width: 353px;             /* Ancho del bloque */
+    height: 113px;            /* Altura del bloque */
+    top: 100px;               /* Posición desde el borde superior de la página/contenedor */
+    left: 56px;               /* Posición desde el borde izquierdo de la página/contenedor */
+    z-index: 800;             /* Nivel de apilamiento (alto, aparecerá sobre elementos con z-index menor) */
+}
+
+/* Bloque 2 - Estilo principal */
+div.bloque2 {
+    background-color: #c5e0b4; /* Color de fondo verde claro */
+    width: 350px;             /* Ancho del bloque */
+    height: 200px;            /* Altura del bloque */
+    top: 144px;               /* Posición vertical respecto al borde superior */
+    left: 300px;              /* Posición horizontal respecto al borde izquierdo */
+    z-index: 2333;            /* Nivel de apilamiento muy alto (el más prioritario actualmente) */
+}
+
+/* Bloque 3 - Estilo principal */
+div.bloque3 {
+    background-color: #ffe699; /* Color de fondo amarillo claro */
+    width: 397px;             /* Ancho del bloque */
+    height: 116px;           /* Altura del bloque */
+    top: 374px;              /* Posición desde la parte superior */
+    left: 20px;              /* Posición desde la izquierda */
+    z-index: 1;              /* Nivel de apilamiento bajo (aparecerá detrás de elementos con z-index mayor) */
+}
+
+/* Elemento hijo 1 dentro del Bloque 2 */
+div.bloque2 div.hijo1 {
+    background-color: #5b9ad5; /* Color de fondo azul */
+    width: 266px;             /* Ancho del elemento */
+    height: 98px;             /* Altura del elemento */
+    top: 120px;               /* Posición vertical relativa al padre (bloque2) */
+    left: 15px;               /* Posición horizontal relativa al padre (bloque2) */
+    z-index: 90;              /* Nivel de apilamiento (dentro del contexto del padre) */
+}
+
+/* Elemento hijo 2 dentro del Bloque 2 */
+div.bloque2 div.hijo2 {
+    background-color: #d0cece; /* Color de fondo gris */
+    width: 143px;             /* Ancho del elemento */
+    height: 296px;            /* Altura del elemento */
+    top: 33px;                /* Posición vertical relativa al padre */
+    left: 126px;              /* Posición horizontal relativa al padre */
+    z-index: 100;             /* Nivel de apilamiento mayor que hijo1 (se superpondrá sobre él) */
+}
+
+/* Elemento hijo 3 dentro del Bloque 2 */
+div.bloque2 div.hijo3 {
+    background-color: #ffb9b9; /* Color de fondo rosa claro */
+    width: 176px;             /* Ancho del elemento */
+    height: 99px;             /* Altura del elemento */
+    top: 278px;               /* Posición vertical relativa al padre */
+    left: 105px;              /* Posición horizontal relativa al padre */
+    z-index: 10;              /* Nivel de apilamiento bajo (aparecerá detrás de hijo1 y hijo2) */
+}
+
+/* Estilo para un párrafo con ID específico */
+#parrafo {
+    right: 600px;            /* Posición desde el borde derecho de la página/contenedor */
+    font-size: 22px;         /* Tamaño de fuente grande */
+    top: 560px;              /* Posición desde la parte superior */
+    color: rgb(10, 100, 2);  /* Color de texto verde oscuro */
+}

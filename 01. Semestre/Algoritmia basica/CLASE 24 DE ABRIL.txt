@@ -1,0 +1,75 @@
+Cuando solo hay una c0ndicion
+
+if(condicion) -----------------------"no lleva" {;}
+	........;
+
+else
+	--------:
+__________________________________________________________________________________________________
+
+Cuando hay mas de dos condiciones se arman a llave
+
+ 
+if(condicion) -----------------------"no lleva" {;}
+{	
+	........;
+	........:
+	........;
+}
+
+else
+	--------:
+	--------:
+	--------:
+}	
+
+___________________________________________________________________________________________________
+
+Buffer: espacio momentario de almacenamiento. 
+
+buffer{String{
+
+BufferRedreader Entrada=new Bufferredreader (new InputStreamReader(System.in);
+____________________________________________________________________________________________________
+Integer.parceInt(u)
+Float.parceFloat (u)
+Double.parceDouble
+___________________________________________________________________________________________________
+import java.io.*;
+
+public class prog22
+{
+	public static void main (string args[])throws IOException
+		{
+			int n,r;
+			n=0;r=0
+			String valor;
+			Bufferreader Entrada=new BufferReader (new InputStreamReader(System.in));
+			System.out.print("Dijite un valor  ");
+			valor= Entrada.readLine();
+			n=Integer.parceInt(valor);
+			r=n%2
+			if(r==0)
+				System.out.println("El numero es par")
+			else
+				System.out.println("el numero es impar")
+		}
+}
+____________________________________________________________________________________________________
+import java.io.*;
+
+public class prog22
+{
+	public static void main (string args[])throws IOException
+		{
+			int n,r;
+			n=0;r=0
+			String valor;nombre;
+			Bufferreader Entrada=new BufferReader (new InputStreamReader(System.in));
+			System.out.print("Dijite primer valor  ");
+			valor= Entrada.readLine();
+			n=Integer.parceInt(valor);
+			System.out.print("Dijite el segundo valor  ")
+			valor= Entrada.readLine();
+			r=Integer.parceInt(valor);
+			

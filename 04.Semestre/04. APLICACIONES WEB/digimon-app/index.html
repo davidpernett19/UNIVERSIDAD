@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digimon App - APK JS/CSS</title>
+
+  <!-- Manifest (icon + splash) -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- MENÚ (único HTML permitido) -->
+  <header class="menu">
+    <h1 class="logo">Digimon App</h1>
+    <nav class="menu-tabs" id="menuTabs">
+      <!-- Los botones del menú se inyectan/activan por JS para facilitar la evaluación -->
+      <button data-tab="home" class="active">Inicio</button>
+      <button data-tab="list">Lista</button>
+      <button data-tab="levels">Filtrar (niveles)</button>
+      <button data-tab="favorites">Favoritos</button>
+      <button data-tab="info">Información</button>
+    </nav>
+
+    <div class="menu-actions">
+      <input id="searchInput" placeholder="Buscar por nombre..." aria-label="Buscar Digimon" />
+      <button id="searchBtn">🔍</button>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL: todo lo demás lo controla JS -->
+  <main id="appRoot" class="app-root"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Digimon App",
+  "short_name": "Digimon",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#071027",
+  "theme_color": "#071027",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

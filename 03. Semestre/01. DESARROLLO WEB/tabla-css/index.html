@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografia CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menú Hamburguesa -->
+<div class="menu-hamburguesa">
+    <!-- Icono de 3 líneas -->
+    <div class="hamburguesa-icono" id="hamburguesa">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </div>
+    <!-- Contenedor de enlaces (oculto inicialmente) -->
+    <nav class="menu-lateral" id="menuLateral">
+        <ul>
+            <li><a href="#que-es-css">¿Qué es CSS?</a></li>
+            <li><a href="#ventajas-css">Ventajas CSS</a></li>
+            <li><a href="#ejemplos-css">Ejemplos CSS</a></li>
+            <li><a href="#que-es-js">¿Qué es JS?</a></li>
+            <li><a href="#ventajas-js">Ventajas JS</a></li>
+            <li><a href="#ejemplos-js">Ejemplos JS</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <header>
+        <h1>Desarrollo Web: CSS</h1>
+    </header>
+
+    <main>
+        <!--Seccion 1 que es CCS?-->
+        <section id="que-es-css">
+            <h2>¿Que es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilos que define cómo se ven los elementos HTML 
+                en una página web. Controla colores, fuentes, márgenes, diseños y más.</p>
+                
+                <p>CSS fue desarrollado por W3C (World Wide Web Consortium) en 1996 por una razón muy sencilla. HTML no fue diseñado para tener etiquetas 
+                    que ayuden a formatear la página. Está hecho solo para escribir el marcado para el sitio.</p>
+                <p class="destacado">CSS es esencial para crear diseños atractivos y responsive.</p>
+                <p>CSS utiliza una sintaxis simple basada en el inglés con un conjunto de reglas que la gobiernan. Como mencionamos anteriormente, HTML no fue hecho con la intención de utilizar elementos de estilo, 
+                    sino solo para el marcado de la página. Fue creado simplemente para describir el contenido. Por ejemplo: &lt;p&gt;Esto es un párrafo&lt;/p&gt;.</p>
+                    <p id="parrafo-corte">Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. 
+                        Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaración están rodeados por llaves.</p>
+                <a href="https://www.ionos.com/es-us/digitalguide/paginas-web/diseno-web/que-es-css/" title="Visitar pagina web con mas detalles" target="_blank"><img id="imagen-scc" src="imagenes/icons8-css3-100.png" alt="imagen css" loading="lazy"
+                    style="max-width: 100%; height: auto;"></a>
+
+                    <!-- Sección 2: Ventajas de CSS -->
+        <section id="ventajas-css" class="seccion">
+            <h2>Ventajas de CSS</h2>
+            <div class="grid-ventajas">
+                <div class="ventaja">
+                    <h3>Separación de contenido y diseño</h3>
+                    <p>Permite modificar el estilo sin alterar el HTML.</p>
+                </div>
+                <div class="ventaja">
+                    <h3>Responsive Design</h3>
+                    <p>Adapta la página a cualquier dispositivo con Media Queries.</p>
+                </div>
+                <div class="ventaja">
+                    <h3>Reutilización de código</h3>
+                    <p>Usa clases para aplicar estilos consistentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Ejemplos de CSS -->
+        <section id="ejemplos-css" class="seccion">
+            <h2>Ejemplos Prácticos</h2>
+            <div class="ejemplos-container">
+                <div class="ejemplo">
+                    <h3>Botón Moderno</h3>
+                    <button class="boton-ejemplo">Haz clic</button>
+                    <p class="codigo">.boton { background: #4CAF50; }</p>
+                </div>
+                <div class="ejemplo">
+                    <h3>Flexbox</h3>
+                    <div class="container-flex">
+                        <div class="item-flex">1</div>
+                        <div class="item-flex">2</div>
+                        <div class="item-flex">3</div>
+                    </div>
+                    <p class="codigo">display: flex;</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!-- Sección 4: ¿Qué es JavaScript? -->
+<section id="que-es-js" class="seccion">
+    <h2>¿Qué es JavaScript?</h2>
+    <p>JavaScript es un lenguaje de programación que permite agregar interactividad a tu página web (ej: animaciones, formularios dinámicos, actualizaciones sin recargar).</p>
+    <p>Cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente JavaScript está involucrado. 
+        Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
+</section>
+
+<!-- Sección 5: Ventajas de JavaScript -->
+<section id="ventajas-js" class="seccion">
+    <h2>Ventajas de JavaScript</h2>
+    <div class="grid-ventajas">
+        <div class="ventaja">
+            <h3>Interactividad</h3>
+            <p>Respuesta a clicks, teclas, y eventos del usuario.</p>
+        </div>
+        <div class="ventaja">
+            <h3>Asincronía</h3>
+            <p>Puede cargar datos sin recargar la página (APIs).</p>
+        </div>
+        <div class="ventaja">
+            <h3>Compatibilidad</h3>
+            <p>Funciona en todos los navegadores modernos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 6: Ejemplos de JavaScript -->
+<section id="ejemplos-js" class="seccion">
+    <h2>Ejemplos Prácticos</h2>
+    <div class="ejemplos-container">
+        <div class="ejemplo">
+            <h3>Contador Interactivo</h3>
+            <div class="contador">
+                <button id="decrementar">-</button>
+                <span id="valor">0</span>
+                <button id="incrementar">+</button>
+            </div>
+            <p class="codigo">document.getElementById()</p>
+        </div>
+        <div class="ejemplo">
+            <h3>Cambio de Color</h3>
+            <button id="cambiar-color" class="boton-ejemplo">Click aquí</button>
+            <p class="codigo">element.style.backgroundColor</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>Pagina creada por David L. Pernett</footer>
+    <script>
+        const hamburguesa = document.getElementById('hamburguesa');
+        const menuLateral = document.getElementById('menuLateral');
+    
+        hamburguesa.addEventListener('click', () => {
+            // Alternar clases para mostrar/ocultar menú y animar icono
+            menuLateral.classList.toggle('mostrar');
+            hamburguesa.classList.toggle('activo');
+        });
+    
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.menu-lateral a').forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                menuLateral.classList.remove('mostrar');
+                hamburguesa.classList.remove('activo');
+            });
+        });
+    </script>
+</body>
+</html>

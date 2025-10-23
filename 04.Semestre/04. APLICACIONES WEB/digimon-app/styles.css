@@ -1,0 +1,51 @@
+/* styles.css - diseño responsivo y limpio */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#ffb86b;
+  --muted:#94a3b8;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --gap:12px;
+  font-family: Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body,#appRoot{height:100%;margin:0;background:linear-gradient(180deg,#071027,var(--bg));color:#e6eef8}
+body{display:flex;flex-direction:column;min-height:100vh}
+
+/* MENU */
+.menu{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter: blur(6px)}
+.logo{margin:0;font-size:1.1rem}
+.menu-tabs button{background:transparent;border:0;padding:8px 10px;margin-right:6px;color:var(--muted);border-radius:8px;cursor:pointer}
+.menu-tabs button.active{background:var(--glass);color:var(--accent);box-shadow:0 4px 10px rgba(0,0,0,0.4)}
+.menu-actions{display:flex;gap:8px;align-items:center}
+#searchInput{padding:8px;border-radius:10px;border:0;min-width:160px}
+
+/* ROOT */
+.app-root{padding:16px;flex:1;overflow:auto}
+
+/* GRID LIST */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));padding:10px;border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.card img{width:120px;height:120px;object-fit:contain;border-radius:8px;max-width:100%}
+
+/* small images */
+.card .name{font-weight:600}
+.card .level{font-size:0.85rem;color:var(--muted)}
+
+/* detalle modal / panel */
+.panel{background:linear-gradient(180deg,#071228,#041225);padding:16px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.detail-img{width:220px;height:220px;object-fit:contain;margin:0 auto}
+
+/* buttons */
+.btn{padding:8px 12px;border-radius:10px;border:0;cursor:pointer}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.btn-accent{background:var(--accent);color:#071226}
+
+/* responsive tweaks */
+@media (max-width:600px){
+  .menu{flex-direction:column;align-items:flex-start;gap:8px}
+  .menu-actions{width:100%}
+  #searchInput{width:100%}
+}

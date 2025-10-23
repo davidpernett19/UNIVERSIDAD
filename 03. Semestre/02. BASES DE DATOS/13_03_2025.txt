@@ -1,0 +1,29 @@
+Sistemas de gestio de bases de datos
+
+son los 
+
+Create
+Read
+Update
+Delete
+
+
+DDL:Lenguaje de la data
+
+create: Creacion de bases y de tablas,
+drop: Eliminar
+alter: Modificar
+
+DML:Manipulacion de datos, gestionar y manipular los datos
+
+Insert
+Update
+Delete
+Select
+
+VARCHAR
+
+DATE:Fecha sola
+DATETIME: Fecha y hora
+
+en las tablas debemos definir las claves primarias y foraneas, definir que campos sean nulos y nulos

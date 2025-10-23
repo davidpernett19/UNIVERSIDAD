@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameRatedCO</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <header>
+  <div class="logo">🎮 GameRatedCO</div>
+  <nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#reseñas-container">Reseñas</a>
+    <a href="#" class="btn" data-open-modal="modal-registro" data-no-auth>Regístrate</a>
+    <a href="#" class="btn" data-open-modal="modal-login">Iniciar sesión</a>
+    <span class="user-badge" data-auth style="display: none;"></span>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Descubre y valora videojuegos</h1>
+    <p>Lee y escribe reseñas de tus juegos favoritos</p>
+    <button id="btn-intro">Regístrate</button>
+  </section>
+
+  <section class="valoradas">
+    <h2>Mejor valoradas</h2>
+    <div class="tarjetas">
+
+
+    <div class="tarjeta" data-plataformas="PC, Xbox,PlayStation,Nintendo Switch">
+        <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2"><div class="imagenV"><img src="Imagenes/img8.jpg" alt="img8"></div></a>
+        <div class="puntuacion" data-juego="Red Dead Redemption 2">--</div>
+        <p><strong>Red Dead Redemption 2</strong></p>
+      </div>
+
+
+      <div class="tarjeta" data-plataformas="PC,PlayStation">
+        <a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition"><div class="imagenV"><img src="Imagenes/img5.jpg" alt="img5"></div></a>
+       <div class="puntuacion" data-juego="The Elder Scrolls V: Skyrim Special Edition">--</div>
+        <p><strong>The Elder Scrolls V: Skyrim Special Edition</strong></p>
+      </div>
+
+
+      <div class="tarjeta" data-plataformas="Nintendo Switch,PC">
+        <a href="https://www.nintendo.com/es-co/store/products/the-legend-of-zelda-breath-of-the-wild-switch/?srsltid=AfmBOoqWzOhuNbxVadwCYybvy9_PJ5AtS7mTvWYFA5bU5z20mNAafyqm"><div class="imagenV"><img src="Imagenes/img6.jpg" alt="img6"></div></a>
+     <div class="puntuacion" data-juego="The Legend of Zelda: Breath of the Wild">--</div>
+        <p><strong>The Legend of Zelda: Breath of the Wild</strong></p>
+      </div>
+
+
+      <div class="tarjeta" data-plataformas="PC, Xbox, PlayStation">
+       <a href="https://store.steampowered.com/app/55150/Warhammer_40000_Space_Marine__Anniversary_Edition/?l=spanish"><div class="imagenV"><img src="Imagenes/img7.jpg" alt="img7"></div></a>
+           <div class="puntuacion" data-juego="Warhammer 40,000: Space Marine 2">--</div>
+        <p><strong>Warhammer 40,000: Space Marine 2</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ultimas">
+    <h2>Últimas reseñas</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <a href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/"><div class="imagen"><img src="Imagenes/Img1.jpg" alt="img1"></div></a>
+        <p><strong>Expedition 33</strong><br>Ver reseñas</p>
+      </div>
+      <div class="tarjeta">
+        <a href="https://store.steampowered.com/app/3159330/Assassins_Creed_Shadows/"><div class="imagen"><img src="Imagenes/img2.jpg" alt="img2"></div></a>
+        <p><strong>Assassin's Creed Shadows</strong><br>Ver reseñas</p>
+      </div>
+      <div class="tarjeta">
+        <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><div class="imagen"><img src="Imagenes/img3.jpg" alt="img3"></div></a>
+        <p><strong>Baldur's Gate 3</strong><br>Ver reseñas</p>
+      </div>
+      <div class="tarjeta">
+        <a href="https://store.steampowered.com/app/1687530/Elder_Ring/"><div class="imagen"><img src="Imagenes/img4.jpg" alt="img4"></div></a>
+        <p><strong>Elden Ring</strong><br>Ver reseñas</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="plataformas">
+    <ul class="toggle-contenido">
+  <li>Mostrar todos</li>
+  <li>PC</li>
+  <li>PlayStation</li>
+  <li>Xbox</li>
+  <li>Nintendo Switch</li>
+  <li>Móvil</li>
+</ul>
+
+  </section>
+
+  <section class="buscar">
+    <h2 class="toggle-titulo">Buscar juegos</h2>
+    <div class="toggle-contenido">
+      <input type="text" id="input-busqueda" placeholder="Escribe un título..." />
+      <ul>
+        <li>Populares</li>
+        <li>De siempre</li>
+        <li>Novedades</li>
+        <li>Por plataforma</li>
+      </ul>
+    </div>
+  </section>
+   <section class="reseña-form">
+    <h2>Escribe tu reseña</h2>
+    <form id="form-reseña">
+      <select id="juego-reseña" required>
+        <option value="">Selecciona un juego</option>
+        <option value="Red Dead Redemption 2">Red Dead Redemption 2</option>
+        <option value="The Elder Scrolls V: Skyrim Special Edition">The Elder Scrolls V: Skyrim Special Edition</option>
+        <option value="The Legend of Zelda: Breath of the Wild">The Legend of Zelda: Breath of the Wild</option>
+        <option value="Warhammer 40,000: Space Marine 2">Warhammer 40,000: Space Marine 2</option>
+      </select>
+
+
+      <input type="number" id="puntuacion" min="1" max="10" placeholder="Puntuación (1-10)" required>
+      <textarea id="comentario" placeholder="Escribe tu reseña..." required></textarea>
+      <button type="submit">Enviar reseña</button>
+    </form>
+  </section>
+
+  <section class="reseñas-container">
+    <h2>Reseñas de la comunidad</h2>
+    <div id="lista-reseñas"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 GameRatedCO. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+  </div>
+
+ 
+</footer>
+
+<!-- Modal Registro -->
+<div id="modal-registro" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Regístrate</h2>
+    <form id="form-registro">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="password" id="contrasena" placeholder="Contraseña" required>
+      <button type="submit">Crear cuenta</button>
+    </form>
+    <p>¿Ya tienes cuenta? <a href="#" data-open-modal="modal-login">Inicia sesión</a></p>
+  </div>
+</div>
+
+<!-- Modal Login -->
+<div id="modal-login" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Iniciar sesión</h2>
+    <form id="form-login">
+      <input type="email" id="login-correo" placeholder="Correo electrónico" required>
+      <input type="password" id="login-contrasena" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="mensaje-login"></p>
+    <p>¿No tienes cuenta? <a href="#" data-open-modal="modal-registro">Regístrate aquí</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
